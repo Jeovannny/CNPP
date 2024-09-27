@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CNPP</title>
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="logo.png">
+
+</head>
+<body>
+
+<!--Janela de Bem Vindo-->
+<div class="janela-bv">
+    <div class="janela-bv-content">
+        <h1>Bem Vindo a CNPP!</h1>
+        <p>Bem Vindo a Cauculadora de Nota para PAS</p>
+        <button class="bem-vindo-button" id="bem-vindo-button">Continue:</button>
+    </div>
+</div>
+<!--Fim Janela de Bem Vindo-->
+
+<!--Cabeçalho-->
+<header>
+    <div class="header-content">
+        <div class="titulo-header">
+            <h1>CNPP</h1>
+        </div>
+    </div>
+</header>
+<!--Fim o Cabeçalho-->
+
+<!--Content-->
+<div class="site-content">
+    <!--Coletando dados-->
+    <div class="site-content-texto">
+        <h1>Insira o número de questões da prova:</h1>
+    </div>
+        <input class="CAIXAT" type="text" id="N_QUEST" placeholder="Nº de Questões">
+
+    <div class="site-content-texto">
+        <h1>Insira quantos itens tem de cada de tipo de questão:</h1>
+    </div>
+        <input class="CAIXAT" type="text" id="NQ_A" placeholder="Tipo A">
+        <input class="CAIXAT" type="text" id="NQ_B" placeholder="Tipo B">
+        <input class="CAIXAT" type="text" id="NQ_C" placeholder="Tipo C">
+        <input class="CAIXAT" type="text" id="NQ_D" placeholder="Tipo D">
+
+    <div class="site-content-texto">
+        <h1>Insira quantos acertos em cada questão:</h1>
+    </div>
+        <input class="CAIXAT" type="text" id="AC_A" placeholder="Tipo A">
+        <input class="CAIXAT" type="text" id="AC_B" placeholder="Tipo B">
+        <input class="CAIXAT" type="text" id="AC_C" placeholder="Tipo C">
+
+    <div class="site-content-texto">
+        <h1>Insira quantas questões você errou de cada item:</h1>
+    </div>
+        <input class="CAIXAT" type="text" id="ER_A" placeholder="Tipo A">
+        <input class="CAIXAT" type="text" id="ER_C" placeholder="Tipo C">
+    
+    <!--Botão para calcular escore-->
+    <button class="BT_SOMA" onclick="somar()">Somar</button>
+        <br></br>
+        <p id="IMP_X"></p>
+</div>
+<!-- Fim Content-->
+<script src="script.js"></script>
+</body>
+</html>
